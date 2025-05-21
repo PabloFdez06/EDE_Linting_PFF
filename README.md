@@ -1,4 +1,5 @@
-# EDE_Linting_PFF
+# <p align="center">EDE_Linting_PFF</p>
+
 
 # INSTALACIÓN DETEKT
 
@@ -11,6 +12,7 @@
  ```
 2. Sincronizamos el proyecto con Gradlew
 3. Generamos el archivo de configuración: ```./gradlew detektGenerateConfig```. Lo que crea un archivo detekt.yml en la raíz o dentro de /config/detekt/.
+
 ![img.png](img.png)
 
 # EJECUCIÓN DEL ANALISIS
@@ -21,7 +23,7 @@
 
 [Datos del Análisis](./build/reports/detekt/detekt.html)
 
-## DETECCIÓN DE 5 ERRORES
+# DETECCIÓN DE 5 ERRORES
 
 Tras estar revisando el anáisis recibido por Detekt, he podido apreciar que mi código no tienen errores, al menos no de lógica, ni en cuanto a desarrollo del código. Si que se pueden apreciar que nos avisa de que algunas lineas exceden el máximo de largo recomendado, y que podiamos espaciarlas, adjunto referencia y solución:
 
@@ -62,8 +64,11 @@ He detectado otro error, que se trata de que en la clase fichero estamos inyecta
 
 - 3.a Posibilidades: Activar/desactivar reglas, cambiar umbrales, excluir carpetas.
 - 3.b Configuré MaxLineLength a 140 caracteres.
+
 ![img_5.png](img_5.png)
+
 - 3.c
+
   ![img_1.png](img_1.png)
   ![img_2.png](img_2.png)
 
