@@ -6,13 +6,11 @@ import java.io.File
 
 /**
  * Clase que proporciona funcionalidades para manipular archivos de texto.
- * Implementa la interfaz IUtilFicheros y utiliza un objeto que implementa la interfaz IEntradaSalida
+ * Implementa la interfaz IUtilFicheros.
  * para realizar operaciones de entrada y salida de archivos para cumplir principio SOLID DIP.
  *
- * @param entradaSalida Objeto que implementa la interfaz IEntradaSalida, utilizado
- *                     para realizar operaciones de entrada y salida.
  */
-class Ficheros(private val entradaSalida: IEntradaSalida) : IUtilFicheros {
+class Ficheros : IUtilFicheros {
     /**
      * Lee el contenido de un archivo y devuelve una lista de líneas tipo String.
      *

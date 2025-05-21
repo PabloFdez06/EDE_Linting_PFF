@@ -51,7 +51,13 @@ class SeguroHogar: Seguro {
     }
 
 
-    constructor(dniTitular: String, importe: Double, metrosCuadrados: Int, valorContenido: Double, direccion: String, anioConstruccion: LocalDate) :
+    constructor(dniTitular: String,
+                importe: Double,
+                metrosCuadrados: Int,
+                valorContenido: Double,
+                direccion: String,
+                anioConstruccion: LocalDate) :
+
             super(numPoliza = ++numPolizasHogar, dniTitular, importe) {
                 this.metrosCuadrados = metrosCuadrados
                 this.valorContenido = valorContenido
